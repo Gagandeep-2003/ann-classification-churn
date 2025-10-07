@@ -1,8 +1,15 @@
-tensorflow==2.15.0
-pandas 
-numpy 
-scikit-learn
-tensorboard
-matplotlib
-streamlit
-scikeras
+# Core ML stack (versions compatible with TF 2.15 on Linux x86_64)
+tensorflow-cpu==2.15.0.post1
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scikeras==0.12.0
+
+# Visualization & app
+matplotlib==3.8.4
+streamlit==1.38.0
+tensorboard==2.15.2
+
+# TF deps that sometimes cause build resolver pain—pin to safe ranges
+protobuf>=3.20,<5
+typing-extensions>=4.5,<5
